@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML + CSS</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <ul id="menu">
+      <li>
+        » Quản lý cán bộ (Đăng ký thông tin)
+        <ul>
+          <li>» Quản lý cán bộ (Đăng ký thông tin)</li>
+        </ul>
+      </li>
+      <li>
+        » Phân quyền
+        <ul>
+          <li>» Phân quyền</li>
+        </ul>
+      </li>
+      <li>
+        » Cống thông tin đào tạo và người học
+        <ul>
+          <li>» Cống thông tin đào tạo và người học</li>
+        </ul>
+      </li>
+      <li>
+        » Quản lý văn bản và hồ sơ công việc
+        <ul>
+          <li>» Quản lý văn bản và hồ sơ công việc</li>
+        </ul>
+      </li>
+      <li>
+        » Hành chính công
+        <ul>
+          <li>» Hành chính công</li>
+        </ul>
+      </li>
+      <li>
+        » Hệ thống thông tin báo cáo
+        <ul>
+          <li>» Hệ thống thông tin báo cáo</li>
+        </ul>
+      </li>
+    </ul>
+    <script>
+      // Lấy tất cả các nút li
+      const buttons = document.querySelectorAll("li");
+
+      // Thêm sự kiện click cho mỗi nút
+      buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+          // Loại bỏ class 'active' từ tất cả các nút
+          buttons.forEach((btn) => btn.classList.remove("active"));
+          // Thêm class 'active' vào nút được nhấn
+          this.classList.add("active");
+        });
+      });
+    </script>
+  </body>
+</html>
