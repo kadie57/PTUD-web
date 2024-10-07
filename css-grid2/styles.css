@@ -1,0 +1,48 @@
+body {
+  max-width: 900px;
+  margin: 25px auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.box {
+  border: 2px solid #4fb9e3;
+  border-radius: 5px;
+  background-color: #cfe8dc;
+  padding: 10px;
+  font-size: 14px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(12, 60px); /* 12 cột, mỗi cột 80px */
+  grid-template-rows: repeat(30, 0); /* 30 hàng, mỗi hàng 20px */
+  gap: 20px; /* Khoảng cách giữa các hàng và cột là 20px */
+}
+.item1 {
+  grid-area: 1 / 1 / 4 / 13;
+}
+.item2 {
+  grid-area: 4 / 1 / 22 / 7;
+}
+.item3 {
+  grid-area: 4 /7 / 18 / 11;
+}
+.item4 {
+  grid-area: 4 / 11 / 29 / 13;
+}
+.item5 {
+  grid-area: 24 / 1 / 29 / 3;
+}
+.item6 {
+  grid-area: 23 / 3 / 29 / 5;
+}
+.item7 {
+  grid-area: 22 / 5 / 29 / 7;
+}
+.item8 {
+  grid-area: 20 / 7 / 29 / 9;
+}
+.item9 {
+  grid-area: 18 / 9 / 29 / 11;
+}
+.item10 {
+  grid-area: 29 / 1 / 31 / 13;
+}

@@ -1,0 +1,17 @@
+* {
+  max-width: 650px;
+  margin: auto;
+  margin-top: 12px;
+  background-color: #fcfaf6;
+}
+h1 {
+  font-family: "Times New Roman", Times, serif;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #222222;
+  line-height: 30px;
+}
