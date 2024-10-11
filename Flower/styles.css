@@ -1,0 +1,52 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  padding: 1px;
+}
+.container > div {
+  background-color: aquamarine;
+}
+div img {
+  width: 100%;
+  height: 100%;
+}
+.p1 {
+  grid-area: 1 / 1 / 3 / 3;
+}
+.p2 {
+  grid-row: 1/3;
+}
+.p3 {
+  grid-column: 4/6;
+}
+
+/* Điều chỉnh grid khi màn hình nhỏ hơn 1200px */
+@media (max-width: 1200px) {
+  .container {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .p3 {
+    grid-column: 5/7; /* Ô thứ 7 sẽ nằm ở vị trí khác khi thu nhỏ */
+  }
+}
+
+/* Khi màn hình nhỏ hơn 1000px, giảm xuống 5 cột */
+@media (max-width: 1000px) {
+  .container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .p3 {
+    grid-column: 1/3; /* Điều chỉnh vị trí của ô 7 */
+  }
+}
+
+/* Khi màn hình nhỏ hơn 800px, giảm xuống 4 cột */
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .p3 {
+    grid-column: 3/5; /* Ô thứ 7 sẽ nằm ở vị trí này khi màn hình nhỏ */
+  }
+}
